@@ -5,90 +5,41 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    min-height: 100vh;
 }
 
 .container {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    max-width: 600px;
-    width: 100%;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
-    font-size: 28px;
-}
-
-.app-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: #f8f9fa;
-    border-radius: 10px;
+.app {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 h2 {
-    color: #667eea;
-    margin-bottom: 15px;
-    font-size: 22px;
+    color: #000;
+    font-size: 18px;
+    min-width: 100px;
 }
 
-.download-buttons {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: #667eea;
-    color: white;
+a {
+    color: #000;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: all 0.3s;
-    text-align: center;
+    border: 1px solid #000;
+    padding: 8px 16px;
+    font-size: 14px;
 }
 
-.btn:hover {
-    background: #764ba2;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-}
-
-.btn-ios {
-    background: #34c759;
-}
-
-.btn-ios:hover {
-    background: #28a745;
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 20px;
-    }
-    
-    h1 {
-        font-size: 24px;
-    }
-    
-    .download-buttons {
-        flex-direction: column;
-    }
-    
-    .btn {
-        width: 100%;
-    }
+a:hover {
+    background: #000;
+    color: #fff;
 }
